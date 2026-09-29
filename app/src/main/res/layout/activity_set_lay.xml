@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setLay">
+
+    <ScrollView
+        android:id="@+id/scrollview_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/layout_button_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Database Upload Reset"
+                android:textColor="@color/golden_metalic"
+                android:textSize="21sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="2dp"
+                android:background="@color/golden_metalic"/>
+
+            <Button
+                android:id="@+id/sendmailbtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_header_selector"
+                android:text="SEND MAIL"
+                android:textColor="@color/golden_metalic" />
+
+            <Button
+                android:id="@+id/getFilebtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_header_selector"
+                android:text="FILE"
+                android:textColor="@color/golden_metalic" />
+
+            <Button
+                android:id="@+id/resetbtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_header_selector"
+                android:text="RESET"
+                android:textColor="@color/golden_metalic" />
+
+            <Button
+                android:id="@+id/SettingWindowApplyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/main_header_selector"
+                android:layout_weight="1.0"
+                android:text="APPLY"
+                android:textColor="@color/golden_metalic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="General Properties"
+            android:textColor="@color/golden_metalic"
+            android:textSize="21sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/golden_metalic"/>
+
+        <TextView
+            android:id="@+id/text_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="Your Native language"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+        <Spinner
+            android:id="@+id/language_Spinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edit_text_border"
+            android:textSize="25dp"
+            android:layout_width ="match_parent"
+            android:textColor="@color/golden_metalic"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/text_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Mail"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/edit_mail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:selectAllOnFocus="true"
+                android:text="murat_muh@yahoo.com"
+                android:textColor="@color/golden_metalic"
+                android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/edit_mailpswd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:paddingStart="20dp"
+            android:selectAllOnFocus="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edit_text_border"
+            android:inputType="textPassword"
+            android:text="2we12wwerfe.$"
+            android:textColor="@color/golden_metalic"
+            android:textSize="19sp" />
+        <CheckBox
+            android:id="@+id/checkBox_showimage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/edit_text_border"
+            android:checkMark="@android:drawable/btn_radio"
+            android:layoutDirection="rtl"
+            android:paddingLeft="20dp"
+            android:text="Show WVS Image     "
+            android:textAlignment="textStart"
+            android:textColor="@color/golden_metalic"
+            android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Page Properties"
+            android:textColor="@color/golden_metalic"
+            android:textSize="21sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/golden_metalic"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Word P. Size"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Verb P. Size"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="Snt. P. Size"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_page_word_size"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_text_border"
+                    android:inputType="number"
+                    android:text="500"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp" />
+                <EditText
+                    android:id="@+id/edit_page_verb_size"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1.0"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:inputType="number"
+                    android:text="125"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp" />
+                <EditText
+                    android:id="@+id/edit_page_sentences_size"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_text_border"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true"
+                    android:text="125"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_cntunuelastWord"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/edit_text_border"
+                android:checkMark="@android:drawable/btn_radio"
+                android:layoutDirection="rtl"
+                android:paddingLeft="20dp"
+                android:text="Continue Last Word     "
+                android:textAlignment="textStart"
+                android:textColor="@color/golden_metalic"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Listen Page Properties"
+            android:textColor="@color/golden_metalic"
+            android:textSize="21sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/golden_metalic"/>
+
+            <CheckBox
+                android:id="@+id/checkBox_wordsndrep"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:checkMark="@android:drawable/btn_radio"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_border"
+                android:text="English Word Repeat     "
+                android:textAlignment="textStart"
+                android:textColor="@color/golden_metalic"
+                android:textSize="19sp"/>
+            <CheckBox
+                android:id="@+id/checkBox_wdecsound"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:checkMark="@android:drawable/btn_radio"
+                android:layoutDirection="rtl"
+                android:background="@drawable/edit_text_border"
+                android:text="W.V.S Sound Make Rate"
+                android:textAlignment="textStart"
+                android:textColor="@color/golden_metalic"
+                android:textSize="19sp"/>
+            <CheckBox
+                android:id="@+id/checkBox_read_native_lang"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:checkMark="@android:drawable/btn_radio"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edit_text_border"
+                android:text="Speak Your Native Language     "
+                android:textAlignment="textStart"
+                android:textColor="@color/golden_metalic"
+                android:textSize="19sp"/>
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="W.V.S Repeat Time"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_sound_repeat_time"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_sound_repeat_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="1"
+                    android:max="11"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="W.V.S Voice Speed"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_word_sound_repeat_sleep_time"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="1000"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_word_sound_repeat_sleep_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="100"
+                    android:max="10000"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="Nat.Lng.Wait Tm.Inc."
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_othlang_sentences_sleep_inc"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="20"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_othlang_sentences_sleep_inc"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="1"
+                    android:max="99"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="Verb Forms Repeat Speed"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_verb_inc_time"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="20"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_verb_inc_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="1"
+                    android:max="299"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/main_header_selector"
+                    android:text="W.V.S wait rate inc"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_sound_dec_per"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="20"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_sound_dec_per"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="1"
+                    android:max="99"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="Next Repeat W.V.S Speed Time"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_word_inc_time"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="20"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_word_inc_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="1"
+                    android:max="99"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Videos Page Properties"
+                android:textColor="@color/golden_metalic"
+                android:textSize="21sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/golden_metalic"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_level_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:text="Level of Videos"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+                <Spinner
+                    android:id="@+id/level_videos_Spinner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:textSize="25dp"
+                    android:layout_width ="match_parent"
+                    android:textColor="@color/golden_metalic"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Talk Page Properties"
+                android:textColor="@color/golden_metalic"
+                android:textSize="21sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/golden_metalic"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/main_header_selector"
+                    android:text="Next WVS Pass Speed"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+                <TextView
+                    android:id="@+id/edit_talk_wait_time"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="20"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_talk_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:minWidth="15dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="5"
+                    android:max="61"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+                <CheckBox
+                    android:id="@+id/checkBox_talk_page_eleminate"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:checkMark="@android:drawable/btn_radio"
+                    android:layoutDirection="rtl"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="Eleminate mode     "
+                    android:textAlignment="textStart"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Write Page Properties"
+                android:textColor="@color/golden_metalic"
+                android:textSize="21sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/golden_metalic"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="Next WVS Pass Speed"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+                <TextView
+                    android:id="@+id/edit_write_wait_time"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="20"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_write_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="5"
+                    android:max="61"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Exam Page Properties"
+                android:textColor="@color/golden_metalic"
+                android:textSize="21sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/golden_metalic"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_exam_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/main_header_selector"
+                    android:text="Next Question Pass Speed"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="19sp"/>
+
+                <TextView
+                    android:id="@+id/edit_exam_wait_time"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:text="3"
+                    android:gravity="center"
+                    android:textColor="@color/golden_metalic"
+                    android:textSize="15sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar_exam_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:maxHeight="15dp"
+                    android:maxWidth="15dp"
+                    android:min="5"
+                    android:max="61"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/custom_seekbar"
+                    android:thumb="@drawable/custom_thumb" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/information_fab"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_help_outline_24"
+        app:maxImageSize="@dimen/design_fab_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

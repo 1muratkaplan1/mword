@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Accordion with Plus/Minus Icon</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+        margin: 20px;
+    }
+    .panel-title .glyphicon{
+        font-size: 14px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.in").each(function(){
+            $(this).siblings(".panel-heading").find(".glyphicon").addClass("glyphicon-menu-down").removeClass("glyphicon-menu-right");
+        });
+
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+            $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-right").addClass("glyphicon-menu-down");
+        }).on('hide.bs.collapse', function(){
+            $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-right");
+        });
+    });
+</script>
+
+</head>
+
+<div style="text-align: center;">
+  <img src="tutoriol/image001.png">
+</div>
+
+<div>
+<h1></h1>
+<h1 align="center">
+<span style="font-size: 20pt" lang="ar-sa">
+<a style="text-decoration: none">
+<font color="#d4af37">FAQ's</font></a></span></h1>
+
+<body>
+<div class="bs-example">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-menu-right"></span> How is work mWord app?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Go main windows and select page and you can start listen or talk or write or exam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-menu-right"></span> Main Window?</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Click the <strong>Content </strong>tab at the top left of the screen<br/><a
+                                class="largeimage img-view" href="tutoriol/mainwindow_1.png" target="_blank"><img
+                                style="width: 248px; height: 71px;" src="tutoriol/mainwindow_1.png" alt="" width="225"
+                                height="56"
+                                border="0"/></a>  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTree"><span class="glyphicon glyphicon-menu-right"></span> Talk & Write & Read & Exam Window?</a>
+                </h4>
+            </div>
+            <div id="collapseTree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Click the <strong>Content </strong>tab at the top left of the screen<br/><a
+                                class="largeimage img-view" href="tutoriol/Write_Listen_Talk_Exam_Window_1.png" target="_blank"><img
+                                style="width: 248px; height: 71px;" src="tutoriol/Write_Listen_Talk_Exam_Window_1.png" alt="" width="225"
+                                height="56"
+                                border="0"/></a>  </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p><strong>Note:</strong> If you need more information then you can visit toturiol page.</p>
+</div>
+</body>
+</html>     

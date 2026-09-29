@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testtt">
+
+    <TextView
+        android:id="@+id/testt_up_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text=""
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:background="@color/golden_metalic"
+        android:textSize="35dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_button_controls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/testt_up_line"
+        app:layout_constraintBottom_toTopOf="@+id/testt_under_line">
+
+        <WebView
+            android:id="@+id/testt_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/testt_under_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text=""
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:background="@color/golden_metalic"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toTopOf="@+id/textView_mail_name"/>
+
+    <TextView
+        android:id="@+id/textView_mail_name"
+        android:layout_width="match_parent"
+        android:text="Copyright © 2021 mk-Engineering"
+        android:layout_height="50dp"
+        android:textSize="19dp"
+        android:background="@drawable/main_header_selector"
+        android:textColor="@color/golden_metalic"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

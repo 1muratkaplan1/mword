@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact_support">
+
+    <TextView
+        android:id="@+id/contact_support_up_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text=""
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:background="@color/golden_metalic"
+        android:textColor="@color/golden_metalic"
+        android:textSize="35dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollview_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/contact_support_button_controls"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/contact_support_up_line"
+        app:layout_constraintBottom_toTopOf="@+id/contact_support_under_line">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTACT SUPPORT"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/golden_metalic"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:text="First and Last Name"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+
+            <EditText
+                android:id="@+id/contact_support_firstlast_name"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textPersonName"
+                android:text="............."
+                android:selectAllOnFocus="true"
+                android:paddingStart="20dp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:text="e-mail adress"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+
+            <EditText
+                android:id="@+id/contact_support_email_adress"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textEmailAddress"
+                android:text="............."
+                android:selectAllOnFocus="true"
+                android:paddingStart="20dp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:text="Subject"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+
+            <EditText
+                android:id="@+id/contact_support_subject"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="textEmailSubject"
+                android:text="............."
+                android:selectAllOnFocus="true"
+                android:paddingStart="20dp"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:text="Message"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+
+            <EditText
+                android:id="@+id/contact_support_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="text"
+                android:text="............."
+                android:selectAllOnFocus="true"
+                android:paddingStart="20dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="21sp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/contact_support_summit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/main_header_selector"
+            android:text="SUMMIT"
+            android:textSize="25sp"
+            android:textColor="@color/golden_metalic" />
+    </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/contact_support_under_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text=""
+        android:fontFamily="@font/lato_black"
+        android:gravity="center"
+        android:background="@color/golden_metalic"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

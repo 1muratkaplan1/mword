@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screenLayout">
+
+
+    <LinearLayout
+        android:id="@+id/layout_screen_information_controls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textview_screen_information"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="100"
+            android:layout_weight="50"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textview_screen_screen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="100"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:maxLines="1"
+            android:shadowColor="@color/purple_200"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="3.0"
+            android:paddingBottom="0dp"
+            android:text="TextViewsdf23213sfssdfsd9"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="41sp"
+            app:autoSizeMinTextSize="11sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_resutls"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center|top"
+        android:text="Results"
+        android:textColor="@color/frg2Color"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_counter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:gravity="right|center|top"
+        android:scaleType="fitStart"
+        android:text="3"
+        android:textColor="@color/grapefruit"
+        android:textSize="29sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_screen_remove"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_remove_button_64"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:maxImageSize="@dimen/design_fab_size_normal"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_screen_play"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_play_button_64"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="@dimen/design_fab_size_normal"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textview_screen_information"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="@android:color/transparent"
+        android:breakStrategy="balanced"
+        android:gravity="center"
+        android:lines="4"
+        android:maxLines="4"
+        android:paddingLeft="119dp"
+        android:paddingTop="1dp"
+        android:paddingRight="119dp"
+        android:paddingBottom="1dp"
+        android:text="Information"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    app:cardElevation="@dimen/activity_vertical_margin">
+
+
+        <LinearLayout
+            android:id="@+id/mail_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/quiz_view_opt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@android:color/transparent"
+                android:text="A-)"
+                android:gravity="center"
+                android:textColor="@color/golden_metalic"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/quiz_view_opt_sentencences"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:text="Hi You doing Murat"
+                android:gravity="start"
+                android:textColor="#151515"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
