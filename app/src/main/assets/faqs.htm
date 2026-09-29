@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example of Bootstrap 3 Accordion with Plus/Minus Icon</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+        margin: 20px;
+    }
+    .panel-title .glyphicon{
+        font-size: 14px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.in").each(function(){
+            $(this).siblings(".panel-heading").find(".glyphicon").addClass("glyphicon-menu-down").removeClass("glyphicon-menu-right");
+        });
+
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+            $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-right").addClass("glyphicon-menu-down");
+        }).on('hide.bs.collapse', function(){
+            $(this).parent().find(".glyphicon").removeClass("glyphicon-menu-down").addClass("glyphicon-menu-right");
+        });
+    });
+</script>
+</head>
+
+<div style="text-align: center;">
+  <img src="faqs/image001.png">
+</div>
+
+<div>
+<h1></h1>
+<h1 align="center">
+<span style="font-size: 20pt" lang="ar-sa">
+<a style="text-decoration: none">
+<font color="#d4af37">FAQ's</font></a></span></h1>
+
+<body>
+<div class="bs-example">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-menu-right"></span> How do i increase to speed of speech?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Go to settings and you can change WVS increase sleep time. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-menu-right"></span> Can I add more words to the program?</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Just pro version?  </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-menu-right"></span> I dont want to hear my language</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Go to Settings and make of native language sounds button.  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour"><span class="glyphicon glyphicon-menu-right"></span> Does the Word program exchange any information with my mobile phone?</a>
+                </h4>
+            </div>
+            <div id="collapsefour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> mWord program only uses your phone's disk to store your information. Apart from this, we have absolutely no access to your mWord program or your information on your phone. Contact us, you just send us a text mail. It does not send any documents belonging to your informants. mWord guarantees this to you. The mWord program is only an educational program.  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapsefive"><span class="glyphicon glyphicon-menu-right"></span> How many language support mWord app?</a>
+                </h4>
+            </div>
+            <div id="collapsefive" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> 12 language Turkish tr,Arabic ar,Spanish es,Rusian ru,Hindi hi,Korean ko,Chinese zh,Japanese ja,Portuguese pt,German de,french fr  </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><span class="glyphicon glyphicon-menu-right"></span> Can i add my own videos to mWord app?</a>
+                </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> Yes! You can copy your file in mp4 format to your phone/download/mWords_videos folder?  </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon glyphicon-menu-right"></span> Do i need internet connection while mWord working?</a>
+                </h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p> You dont need internet connection.  </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><span class="glyphicon glyphicon-menu-right"></span> Does mWord Pro include Toefl words?</a>
+                </h4>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse">
+                <div class="panel-body">
+              	      <p> mWord pro 1.01 version include 25000 english words,2000 verbs and 2000 common sentencences. But mWord Mega include yours words.  </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <p><strong>Note:</strong> If you need more information then you can visit toturiol page.</p>
+</div>
+</body>
+</html>     

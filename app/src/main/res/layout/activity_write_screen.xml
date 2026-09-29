@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteScreen">
+    <LinearLayout
+        android:id="@+id/layout_writescreen_information_controls_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_writescreen_information"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:maxLines="4"
+            android:lines="4"
+            android:text="Information"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_writescreen_information_controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_view_native_word"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Information"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <EditText
+                android:id="@+id/textview_write_eng_word"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top|center"
+                android:text="Information"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="47sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_write_screen_resutls"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center|top"
+        android:text="Results"
+        android:textColor="@color/duck_egg_blue"
+        android:textSize="21sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/textview_write_screen_counter"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:gravity="right|center|top"
+        android:text="3"
+        android:textColor="@color/grapefruit"
+        android:textSize="29sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_write_screen_prev"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_prev"
+        app:backgroundTint="#4DFFFFFF"
+        app:maxImageSize="@dimen/design_fab_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_write_screen_play"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:src="@drawable/ic_play_button_64"
+        app:backgroundTint="#4DFFFFFF"
+        app:maxImageSize="@dimen/design_fab_size_normal"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|end"
+        android:layout_marginLeft="170dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_write_screen_next"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_next"
+        app:backgroundTint="#4DFFFFFF"
+        app:maxImageSize="@dimen/design_fab_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
